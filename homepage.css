@@ -83,7 +83,7 @@
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color: #fff;
+    color: #009688;
 }
 
 .content h1{
@@ -115,7 +115,7 @@ button{
 
 button a{
     text-decoration: none;
-    color: #fff;
+    color: #009688;
 }
 
 span{
@@ -132,4 +132,8 @@ span{
 
 button:hover span{
     width: 100%;
+}
+
+button a:hover{
+    color: #fff;
 }
