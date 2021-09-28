@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: #009688;
+    color: #fff;
+}
+
+@font-face {
+    font-family: CeraPro;
+    src: url(Font/CeraPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(Font/Raleway-SemiBold.ttf);
+}
+
+.banner{
+    width: 100%;
+    background: #fff;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0; 
+    display: flex;
+    line-height: 20px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #009688;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding: 5px 0px 0px 35px;
+    width: 90px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Cerapro;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #963000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.tourist::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #963000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.content h3{
+    font-family: CeraPro;
+    font-size: 30px;
+    text-align: center;
+    margin: 80px 60px 60px 60px;
+    color: #963000;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.tourImage{
+    padding: 34px 30px 0px 170px;
+    width: 30%;
+    height: 30%;
+}
+
+.tourTitle{
+    padding: 60px 30px 0px 0px;
+}
+
+.tourTitle h2{
+    font-size: 50px;
+    font-family: CeraPro;
+    color: #963000;
+}
+
+.tourTitle p{
+    margin: 10px 120px 20px 0px;
+    font-family: Raleway;
+    font-size: 20px;
+    color:#009688;
+    line-height: 25px;
+}
+
+.tourImage2{
+    padding: 34px 170px 0px 30px;
+    width: 30%;
+    height: 30%;
+}
+
+.tourTitle2{
+    padding: 60px 0px 0px 30px;
+    text-align: right;
+}
+
+.tourTitle2 h2{
+    font-size: 50px;
+    font-family: CeraPro;
+    color: #963000;
+}
+
+.tourTitle2 p{
+    margin: 10px 0px 20px 115px;
+    font-family: Raleway;
+    font-size: 20px;
+    color:#009688;
+    line-height: 25px;
+}
+
+.tourImage3{
+    padding: 65px 30px 0px 170px;
+    width: 30%;
+    height: 30%;
+}
+
+.up{
+    transform: translateX(800%);
+    width: 90px;
+    cursor: pointer;
+}
